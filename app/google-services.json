@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "563915651139",
+    "firebase_url": "https://cineskip.firebaseio.com",
+    "project_id": "cineskip",
+    "storage_bucket": "cineskip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:563915651139:android:eb4fd0ea03989fbd",
+        "android_client_info": {
+          "package_name": "com.example.admin.cineskip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "563915651139-3f4oulq5k33v7p8b2qookmaaonlit34q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoWnv9bQkC2PofSAXJfm1aLpVdfS6reiQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
