@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius='12dp'
+    android:layout_margin="7dp"
+    android:elevation="90dp"
+    android:id="@+id/movieCard">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:clickable="true"
+        android:id="@+id/moviebutton">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/post_image"
+            android:clickable="true"/>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/post_title"
+            android:text="POST TITLE"
+            android:textSize="30dp"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:layout_below="@id/post_image"
+            android:clickable="true"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</android.support.v7.widget.CardView>

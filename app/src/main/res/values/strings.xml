@@ -1,3 +1,47 @@
 <resources>
     <string name="app_name">CineSkip</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_cinemas">cinemas</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="Ticket">
+        <item>Select Ticket</item>
+        <item>None</item>
+        <item>Adult</item>
+        <item>Student</item>
+        <item>Child</item>
+    </string-array>
+
+    <string-array name="Food">
+        <item>Select Food</item>
+        <item>None</item>
+        <item>Large Popcorn</item>
+        <item>Medium Popcorn</item>
+        <item>Small Popcorn</item>
+    </string-array>
+
+    <string-array name="Drink">
+        <item>Select Drink</item>
+        <item>None</item>
+        <item>Large Drink</item>
+        <item>Medium Drink</item>
+        <item>Small Drink</item>
+    </string-array>
+
+    <string-array name="MealDeal">
+        <item>Select Meal Deal</item>
+        <item>None</item>
+        <item>Large Combo</item>
+        <item>Medium Combo</item>
+        <item>Samll Combo</item>
+    </string-array>
+    <string name="title_activity_navigationdrawertest">navigationdrawertest</string>
+
+
 </resources>

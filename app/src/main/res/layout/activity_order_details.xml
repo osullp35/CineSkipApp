@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundpopcorn"
+    tools:context="com.example.admin.cineskip.orderDetails">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:textSize="35dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:text="Please Select Your Order Details"
+            android:textColor="@color/textcolor" />
+
+
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/Ticket"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:background="#C0C0C0" />
+
+
+    <Spinner
+        android:id="@+id/Food"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/Ticket"
+        android:layout_alignStart="@+id/Ticket"
+        android:layout_below="@+id/Ticket"
+        android:layout_marginTop="50dp"
+        android:background="#C0C0C0" />
+
+
+    <Spinner
+        android:id="@+id/Drink"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/Food"
+        android:layout_alignStart="@+id/Food"
+        android:layout_below="@+id/Food"
+        android:layout_marginTop="50dp"
+        android:background="#C0C0C0"
+        android:textColor="@color/textcolor" />
+
+
+    <Spinner
+        android:id="@+id/MealDeal"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/Drink"
+        android:layout_alignStart="@+id/Drink"
+        android:layout_below="@+id/Drink"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#C0C0C0"
+        />
+
+
+    <Button
+        android:id="@+id/IncreaseT"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/ticketNum"
+        android:layout_alignRight="@+id/ticketNum"
+        android:layout_alignTop="@+id/ticketNum"
+        android:background="@drawable/textboxbackground"
+        android:onClick="countINt"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/DecreaseT"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/ticketNum"
+        android:layout_alignLeft="@id/ticketNum"
+        android:background="@drawable/textboxbackground"
+        android:onClick="countDEt"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/ticketNum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/Ticket"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/Ticket"
+        android:layout_toRightOf="@+id/Ticket"
+        android:background="@drawable/buttonbackground"
+        android:text="0"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/IncreaseF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/foodNum"
+        android:layout_alignRight="@+id/foodNum"
+        android:layout_alignTop="@+id/foodNum"
+        android:background="@drawable/textboxbackground"
+        android:onClick="countINf"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/DecreaseF"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/foodNum"
+        android:layout_alignLeft="@id/foodNum"
+        android:background="@drawable/textboxbackground"
+        android:onClick="countDEf"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/foodNum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/Food"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/Food"
+        android:layout_toRightOf="@+id/Food"
+        android:background="@drawable/buttonbackground"
+        android:text="0"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/IncreaseD"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/drinkNum"
+        android:layout_alignRight="@+id/drinkNum"
+        android:layout_alignTop="@+id/drinkNum"
+        android:background="@drawable/textboxbackground"
+        android:onClick="countINd"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/DecreaseD"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/drinkNum"
+        android:layout_alignLeft="@id/drinkNum"
+        android:background="@drawable/textboxbackground"
+        android:onClick="countDEd"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/drinkNum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/Drink"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/Food"
+        android:layout_toRightOf="@+id/Food"
+        android:background="@drawable/buttonbackground"
+        android:text="0"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/IncreaseM"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/mealNum"
+        android:layout_alignRight="@+id/mealNum"
+        android:layout_alignTop="@+id/mealNum"
+        android:background="@drawable/textboxbackground"
+        android:onClick="countINm"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/DecreaseM"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/mealNum"
+        android:layout_alignLeft="@id/mealNum"
+        android:background="@drawable/textboxbackground"
+        android:onClick="countDEm"
+        android:text="-"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/mealNum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/MealDeal"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/Food"
+        android:layout_toRightOf="@+id/Food"
+        android:background="@drawable/buttonbackground"
+        android:text="0"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/orderProceed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/buttonbackground"
+        android:text="Proceed to Checkout"
+        android:textSize="20dp" />
+
+</RelativeLayout>

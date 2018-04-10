@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/selectionNav"
+        android:title="Cinema Selection"/>
+
+    <item android:id="@+id/ticketNav"
+        android:title="My Tickets"/>
+
+    <item android:id="@+id/trailersNav"
+        android:title="Movie Trailers"/>
+
+    <item android:id="@+id/logoutNav"
+        android:title="Logout"/>
+</menu>

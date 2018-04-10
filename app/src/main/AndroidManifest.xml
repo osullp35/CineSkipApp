@@ -3,6 +3,8 @@
     package="com.example.admin.cineskip">
 
     <uses-permission android:name="INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -10,7 +12,7 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/iconsign"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,7 +22,15 @@
         </activity>
         <activity android:name=".Registerscreen" />
         <activity android:name=".cinemaselection" />
-        <activity android:name=".profileActivity"></activity>
+        <activity android:name=".profileActivity" />
+        <activity android:name=".movieSelection" />
+        <activity android:name=".payment" />
+        <activity android:name=".orderDetails" />
+        <activity android:name=".qrTest" />
+        <activity android:name=".moviesRecycle" />
+        <activity android:name=".movieTrailers" />
+        <activity android:name=".timeSelection" />
+        <activity android:name=".orderConfirmation"></activity>
     </application>
 
 </manifest>

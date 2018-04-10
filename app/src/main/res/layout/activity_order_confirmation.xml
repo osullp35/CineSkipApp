@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".orderConfirmation"
+    android:background="@drawable/backgroundpopcorn"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Order Confirmation"
+        android:textColor="@color/textcolor"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="You can get the tickets from the 'My tickets' page"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="You can pre order food on the 'Pre Order' page"
+        android:textAlignment="center"
+        android:textColor="@color/textcolor"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Go to 'My Tickets'"
+        android:id="@+id/orderTickets"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/buttonbackground"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Go to 'Pre Order'"
+        android:id="@+id/orderPre"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/buttonbackground"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
