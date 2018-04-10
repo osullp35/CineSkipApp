@@ -30,7 +30,9 @@
         <activity android:name=".moviesRecycle" />
         <activity android:name=".movieTrailers" />
         <activity android:name=".timeSelection" />
-        <activity android:name=".orderConfirmation"></activity>
+        <activity android:name=".orderConfirmation" />
+        <activity android:name=".ShoppingCart" />
+        <activity android:name=".newOrder"></activity>
     </application>
 
 </manifest>

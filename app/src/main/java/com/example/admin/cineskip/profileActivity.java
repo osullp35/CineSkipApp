@@ -147,12 +147,18 @@ public class profileActivity extends AppCompatActivity implements View.OnClickLi
             Intent i = new Intent(this,profileActivity.class);
             startActivity(i);
 
-        } else if (id == R.id.nav_gallery) {
-            Intent i = new Intent(this,profileActivity.class);
+        } else if (id == R.id.ticketNav) {
+            Intent i = new Intent(this,qrTest.class);
             startActivity(i);
 
-        } else if (id == R.id.nav_slideshow) {
-            Intent i = new Intent(this,profileActivity.class);
+        }
+        else if (id == R.id.preOrderNav) {
+            Intent i = new Intent(this,qrTest.class);
+            startActivity(i);
+
+        }
+        else if (id == R.id.trailersNav) {
+            Intent i = new Intent(this,movieTrailers.class);
             startActivity(i);
 
         } else if (id == R.id.logoutNav) {

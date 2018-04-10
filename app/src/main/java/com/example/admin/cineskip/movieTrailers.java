@@ -4,15 +4,32 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.net.Uri;
 import android.widget.MediaController;
+import android.widget.Toast;
 import android.widget.VideoView;
+import com.google.android.youtube.player.YouTubeBaseActivity;
+import com.google.android.youtube.player.YouTubeInitializationResult;
+import com.google.android.youtube.player.YouTubePlayer;
+import com.google.android.youtube.player.YouTubePlayer.ErrorReason;
+import com.google.android.youtube.player.YouTubePlayer.PlaybackEventListener;
+import com.google.android.youtube.player.YouTubePlayer.PlayerStateChangeListener;
+import com.google.android.youtube.player.YouTubePlayer.Provider;
+import com.google.android.youtube.player.YouTubePlayerView;
 
-public class movieTrailers extends AppCompatActivity {
+
+public class movieTrailers extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
+
+    private static final String API_KEY = "AIzaSyDqGFgS2CeXfA79_-rspMOZqCKugwdIxf8";
+    private static final String VIDEO_ID = "xjDjIWPwcPU";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_trailers);
 
+        YouTubePlayerView youTubePlayerView = (YouTubePlayerView) findViewById(R.id.youtubePlayer);
+        youTubePlayerView.initialize(API_KEY, this);
+        /*
         VideoView videoView = (VideoView)findViewById(R.id.videoView);
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
@@ -21,5 +38,60 @@ public class movieTrailers extends AppCompatActivity {
         videoView.setVideoURI(uri);
         videoView.requestFocus();
         videoView.start();
+        */
     }
+
+    @Override
+    public void onInitializationSuccess(Provider provider, YouTubePlayer player, boolean b) {
+        player.setPlayerStateChangeListener(playerStateChangeListener);
+        player.setPlaybackEventListener(playbackEventListener);
+
+        if(!b){
+            player.cueVideo(VIDEO_ID);
+        }
+    }
+
+    @Override
+    public void onInitializationFailure(Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
+        Toast.makeText(this, "Failed to initialize",Toast.LENGTH_LONG).show();
+    }
+
+    private PlaybackEventListener playbackEventListener = new PlaybackEventListener() {
+        @Override
+        public void onBuffering(boolean arg0) {
+        }
+        @Override
+        public void onPaused() {
+        }
+        @Override
+        public void onPlaying() {
+        }
+        @Override
+        public void onSeekTo(int arg0) {
+        }
+        @Override
+        public void onStopped() {
+        }
+    };
+
+    private PlayerStateChangeListener playerStateChangeListener = new PlayerStateChangeListener() {
+        @Override
+        public void onAdStarted() {
+        }
+        @Override
+        public void onError(ErrorReason arg0) {
+        }
+        @Override
+        public void onLoaded(String arg0) {
+        }
+        @Override
+        public void onLoading() {
+        }
+        @Override
+        public void onVideoEnded() {
+        }
+        @Override
+        public void onVideoStarted() {
+        }
+    };
 }
